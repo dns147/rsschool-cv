@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+    background-color: #fffde7;
+}
+
+.empty {
+    display: none;
+}
+
+.box {
+    background-color: #f1f5e3;
+    box-shadow: inset 0px 0px 20px 0px #92ab92;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav__list {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav__item:hover {
+    background-color: #88c2c4;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 3.2;
+}
+
+.my__foto {
+    margin: 0;
+}
+
+.footer {
+    padding: 15px;
+}
+
+.footer ul {
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+.hr {
+    background-color: #026f65;
+    height: 1px;
+    border: none;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    background-color: #88c2c4;
+}
+
+.header__name {
+    font-size: 30px;
+}
+
+.contacts ul li span {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.contacts ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.contacts ul li a:hover {
+    background-color: #88c2c4;
+}
+
+.contacts ul li a span {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.master {
+    display: flex;
+    flex-direction: column;
+	width: 60%;
+	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-family: 'Besley', serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: width 1s;
+}
+
+.master h1, h2 {
+	margin-bottom: 0;
+}
+
+.master span {
+	font-weight: bold;
+}
+
+.middle__block {
+    display: flex;
+}
+
+.middle__block__left {
+    flex: 1;
+}
+
+.middle__block__right {
+    flex: 3;
+}
+
+.skills ul {
+    padding-left: 20px;
+}
+
+.foto {
+    border: 1px solid #88c2c4;
+    border-radius: 0px 40px 0px 40px;
+    margin-left: 10px;
+}
+
+.list ul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list ul li img:hover {
+	transform: scale(0.8);
+    transition: all 0.2s;
+}
+
+.spoiler pre {
+    width: 260px;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.spoiler summary {
+    cursor: pointer;
+}
+
+.spoiler summary:hover {
+    background-color: #88c2c4;
+}
+
+.projects ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projects ul li p {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.projects ul li a img:hover {
+    transform: scale(1);
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 0px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 0px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: all 0s;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+    border: 0px;
+}
+
+@media only all and (max-width: 1600px) {
+    .master {
+        width: 70%;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1500px) {
+    .master {
+        width: 75%;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1400px) {
+    .master {
+        width: 80%;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1200px) {
+    .master {
+        width: 85%;
+        font-size: 14px;
+        transition: all 0.8s;
+    }
+    .video {
+        width: 550px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 1100px) {
+    .master {
+        width: 90%;
+        transition: all 0.8s;
+    }
+    .video {
+        width: 500px;
+        transition: all 0.8s;
+    }
+}
+
+@media (min-width: 1000px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-custom .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom > .container {
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+}
+
+@media only all and (max-width: 999px) {
+    .nav__item:first-child {
+        margin-top: 7px;
+    }
+    .video {
+        width: 400px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 950px) {
+    .video {
+        width: 340px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 800px) {
+    .master {
+        font-size: 16px;
+        transition: all 0.8s;
+    }
+
+    .middle__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spoiler pre {
+        width: 100%;
+    }
+    .video {
+        width: 500px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 720px) {
+    header {
+        line-height: 2;
+        transition: all 0.8s;
+    }
+    .video {
+        width: 450px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 600px) {
+    .master {
+        font-size: 15px;
+        transition: all 0.8s;
+    }
+    .foto {
+        width: 90%;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 26px;
+        transition: all 0.8s;
+    }
+     .footer ul li {
+        transform: scale(0.9);
+    }
+    .video {
+        width: 360px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 500px) {
+    header {
+        line-height: 1.7;
+        transition: all 0.8s;
+    }
+    .master {
+        font-size: 14px;
+        transition: all 0.8s;
+    }
+    .foto {
+        width: 85%;
+        transition: all 0.8s;
+    }
+    .contacts ul li a {
+        font-size: 15px;
+        transition: all 0.8s;
+    }
+    .contacts ul li a span {
+        font-size: 30px;
+        transition: all 0.8s;
+    }
+    .header__p {
+        font-size: 13px;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 24px;
+        transition: all 0.8s;
+    }
+    .footer ul li {
+        transform: scale(0.8);
+    }
+    .video {
+        width: 320px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 450px) {
+    .foto {
+        width: 80%;
+        transition: all 0.8s;
+    }
+    .contacts ul li a {
+        font-size: 14px;
+        transition: all 0.8s;
+    }
+    .header__p {
+        font-size: 12px;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 22px;
+        transition: all 0.8s;
+    }
+    .footer ul li {
+        transform: scale(0.65);
+    }
+    .footer ul {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 20%));
+        justify-content: center;
+        grid-template-rows: 40px;
+    }
+    .video {
+        width: 300px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 420px) {
+    .foto {
+        width: 70%;
+        transition: all 0.8s;
+    }
+    .header__name {
+        font-size: 18px;
+        transition: all 0.8s;
+    }
+    .contacts ul li a {
+        font-size: 13px;
+        transition: all 0.8s;
+    }
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(95px, 20%));
+    }
+    .video {
+        width: 250px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 400px) {
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 20%));
+    }
+    .video {
+        width: 200px;
+        transition: all 0.8s;
+    }
+}
+
+@media only all and (max-width: 380px) {
+    .master {
+        font-size: 13px;
+        transition: all 0.8s;
+    }
+    .footer ul {
+        justify-content: left;
+        grid-template-columns: repeat(auto-fit, minmax(85px, 20%));
+    }
+}
+
+@media only all and (max-width: 360px) {
+    .contacts ul li a {
+        font-size: 12px;
+        transition: all 0.8s;
+    }
+    .footer ul li {
+        transform: scale(0.6);
+    }
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 20%));
+    }
+}
+
+@media only all and (max-width: 330px) {
+    .contacts ul li a {
+        font-size: 11px;
+        transition: all 0.8s;
+    }
+    .footer ul li {
+        transform: scale(0.5);
+    }
+    .footer ul {
+        grid-template-columns: repeat(auto-fit, minmax(63px, 20%));
+    }
+}
