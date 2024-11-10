@@ -14,3 +14,20 @@ I am a highly organized, efficient and proactive. I believe that my ability to l
 * Framework: Bootstrap, React
 * Databases: Firebase, Firestore
 * Code version control: GIT
+
+## Code example
+**[https://leetcode.com/problems/rotate-array/description/](Task from Leetcode):** *Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.*
+```javascript
+function rotate(nums: number[], k: number): void { 
+  while (k > 0) {
+    const lastElem = nums[nums.length - 1];
+
+    for (let i = nums.length - 1; i > 0; i--) {
+      nums[i] = nums[i - 1];
+    }
+
+    nums[0] = lastElem;
+    k--;
+  }
+}
+```
