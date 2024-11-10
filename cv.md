@@ -39,3 +39,14 @@ function rotate(nums: number[], k: number): void {
 **Used tools:** App has been developed using the following stack of technologies: JavaScript, HTML, CSS, AJAX, Firebase. App is built on the principle of single-page application. Application code has been created with MVC architectural design pattern.  
 **Link:** [Zombie Hunter](https://dns147.github.io/)
 
+## Education  
+**Nov 2020 - Mar 2021 – Educational Center for Programming and High Tech (IT-Academy)**  
+**Course:** Web application development with JavaScript.  
+**Description:** Functions, Arrays and hashes, Closures, Classes, DOM, Events, Event object: mouse, keyboard, touchscreen, drag & drop events, Event loop, Timers, Animation, Render tree, JSON, MVC, AJAX, Promises, SPA.  
+
+**Sep 2020 - Nov 2020 – Educational Center for Programming and High Tech (IT-Academy)**  
+**Course:** Website development with HTML, CSS и JavaScript.  
+**Description:** Links, Images, Fonts, Borders, Dimensions, Indentation, Background, Tables, Flow, Selectors, Cascading, Display and visibility, Media queries, Adaptive layout, Forms, HTML5, Multimedia, CSS3, Animation, Flex, Grid, Cycles, Functions, Arrays and hashes, DOM.
+
+## English Proficiency:  
+A2
